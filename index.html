@@ -42,32 +42,32 @@
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Registration</h3>
-                    <form action="">
+                    <form action="" id="registerForm">
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="">First Name</label>
-                                <input type="text" placeholder="" required>
+                                <input type="text" name="Fname" id="Fname" placeholder="" required>
                             </div>
                             <div class="input-group">
                                 <label for="">Last Name</label>
-                                <input type="text" placeholder="" required>
+                                <input type="text" name="Lname" id="Lname" placeholder="" required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="">Email</label>
-                                <input type="email" placeholder="" required>
+                                <input type="email" name="email" id="email" placeholder="" required>
                             </div>
                             <div class="input-group">
-                                <label for="">Address</label>
-                                <input type="text" placeholder="" required>
+                                <label for="">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="" required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group" id="coach">
                                 <label>Do you go for coaching?</label>
                                 <div class="custom_select">
-                                    <select id="ans" required>
+                                    <select name="ans" id="ans" required>
                                         <option value="">Select</option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
@@ -76,13 +76,13 @@
                             </div>
                             <div class="input-group" id="ifYes" style="display: none;">
                                 <label>Coaching Institute Name</label>
-                                <input type="text" class="input" required>
+                                <input type="text" name="Cname" id="Cname" class="input">
                             </div>
                         </div>
                         <label>Address</label>
-                        <textarea rows="5" placeholder="" required></textarea>
+                        <textarea rows="5" name="address" id="address" placeholder="" required></textarea>
                         <div class="inputfield terms">
-                            <input type="checkbox" id="checkbox" required>
+                            <input type="checkbox" name="checkbox" id="checkbox" required>
                             <label for="checkbox">
                                 Agreed to our<span id="myBtn"> privacy policy</span>
                             </label>
@@ -184,6 +184,13 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
     <script src="script.js"></script>
 </body>
 
