@@ -123,6 +123,8 @@ img{
     border: 2px solid #16A085;
     border-radius: 10px;
     width: 80%;
+    height: 80%;
+    overflow: auto;
   }
   
   .modal-content p{
@@ -392,7 +394,6 @@ tr td i {
 
     .contact-right{
         padding: 40px;
-        /* background-size: 50%; */
     }
 
     tr td{
@@ -423,16 +424,12 @@ tr td i {
     }
 
     .header{
-        /* display: flex; */
         flex-direction: column;
     }
 
     .block{
         width: 100%;
     }
-    /* .block:nth-child(2){
-        display: none;
-    } */
 
     img{
         width: 70%
