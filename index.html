@@ -7,28 +7,184 @@
     <title>Tensors - Online Mentorship Program</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe06f24a1a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <a href="http://tensors.in/" class="logo">TENSORS</a>
-        </div>
-        <div class="header">
-            <div class="block">
-                <span class="sub-header">Launching Soon...</span>
-                <h1 class="title-header">TENSORS Online JEE Mentorship Program</h1>
-                <p class="text">When just the thought of appearing for IIT JEE seems overwhelming, you know that it’s
-                    time to seek help and talk to a mentor. Our IIT mentors have been counselling IIT aspirants for a
-                    long time now, and they can help you with a breakthrough.</p>
-                <p class="text">Connect with former JEE achievers and indulge in a journey of inspiration with their
-                    personal mentorship.</p>
-                <a href="#" class="btn btn-header">Register Now</a>
+    <section>
+        <div class="container-header">
+            <div class="nav">
+                <a href="http://tensors.in/" class="logo"><img src="imgs/T.png" alt=""></a>
             </div>
-            <div class="block">
-                <img src="imgs/undraw_video_call_kxyp.svg" alt="BG Image" class="image">
+            <div class="header">
+                <div class="block">
+                    <span class="sub-header">Launching Soon...</span>
+                    <h1 class="title-header">TENSORS Online JEE Mentorship Program</h1>
+                    <p class="text">When just the thought of appearing for IIT JEE seems overwhelming, you know that
+                        it’s
+                        time to seek help and talk to a mentor. Our IIT mentors have been counselling IIT aspirants for
+                        a
+                        long time now, and they can help you with a breakthrough.</p>
+                    <p class="text">Connect with former JEE achievers and indulge in a journey of inspiration with their
+                        personal mentorship.</p>
+                    <a href="#section" class="btn btn-header">Register Now</a>
+                </div>
+                <div class="block">
+                    <img src="imgs/undraw_video_call_kxyp.svg" alt="BG Image" class="image">
+                </div>
+            </div>
+    </section>
+    <section id="section">
+        <div class="container">
+            <h1>Register Now!</h1>
+            <p>Connect with former JEE achievers and indulge in a journey of inspiration with their
+                personal mentorship.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Registration</h3>
+                    <form action="">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="">First Name</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="">Last Name</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="">Address</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group" id="coach">
+                                <label>Do you go for coaching?</label>
+                                <div class="custom_select">
+                                    <select id="ans" required>
+                                        <option value="">Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group" id="ifYes" style="display: none;">
+                                <label>Coaching Institute Name</label>
+                                <input type="text" class="input" required>
+                            </div>
+                        </div>
+                        <label>Address</label>
+                        <textarea rows="5" placeholder="" required></textarea>
+                        <div class="inputfield terms">
+                            <input type="checkbox" id="checkbox" required>
+                            <label for="checkbox">
+                                Agreed to our<span id="myBtn"> privacy policy</span>
+                            </label>
+                        </div>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>tensorsofficial@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+91 8157925677</td>
+                        </tr>
+                        <tr class="socials">
+                            <td><a href="https://www.instagram.com/tensors_official/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></td>
+                            <td><a href="https://www.linkedin.com/company/tensors/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Transparency Regarding the Use of Your Personal Data</h2>
+                <br>
+                <p> As part of our commitment to protecting your privacy, this statement is designed to
+                    provide you with information regarding how Tensors (“we”), may use — and process —
+                    the
+                    information you share when you use the tensors.in website and each of its associated
+                    domains. Information is also collected when you communicate with
+                    us or utilize our services which include admission to Tensors Programs, academic
+                    progress
+                    tracking and communications .This statement is applicable to individuals using
+                    Tensors
+                    services, irrespective of their location as our sphere of operation will most surely
+                    be
+                    the whole of India by the time you read this document.</p>
+                <br>
+                <h2>Your Personal Data We Use</h2>
+                <br>
+                <p>Information you provide directly to Graduate Division
+                    Tensors collects personal information about you called Personal Data. Your Personal
+                    Data
+                    is
+                    collected when you register or fill in a form on the Tensors Services, or contact
+                    Tensors.
+                    This includes information you provide when register to use our Services. Depending
+                    upon
+                    the
+                    specific Tensors Services you use, the information you give us includes your
+                    specific
+                    data
+                    such as name, address and thone number, e-mail address, payment information, as well
+                    as
+                    any
+                    information about you that is associated with or linked to, or could be linked to,
+                    any
+                    of
+                    the foregoing data.</p>
+                <br>
+                <h2>How We Use Your Personal Data and the Lawful Basis for Such Processing</h2>
+                <br>
+                <p>Tensors processes your Personal Data for the following purposes and bases:
+                <ul>
+                    <li>1. To analyse our customer base and come up with new and/or improved services.
+                    </li>
+
+                    <li>2. To plan the growth and focus areas of Tensors.</li>
+
+                    <li>3. To contact you in order to update you about a standing request/new service or
+                        product/provide information that you will need while using Tensors for
+                        maintaining
+                        a healthy customer relationship. To Provide you with information regarding
+                        Tensors
+                        events and initiatives. We will
+                        generally only do this where it is in our legitimate interest and where you have
+                        not
+                        objected or withdrawn any prior consent given.</li>
+
+                    <li>4. Processing and dealing with any complaints or inquiries made by you or
+                        legally
+                        on
+                        your behalf or against you. We do this because it is in our legitimate interest
+                        to
+                        ensure the smooth functioning of Tensors. </li>
+                </ul>
+                </p>
+            </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
