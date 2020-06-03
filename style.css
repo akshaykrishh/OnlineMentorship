@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    height: 5.625rem;
+}
+
+.logo{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #16A085;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.block{
+    width: 50%;
+    height: 100%;
+}
+
+.block:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 90%;
+}
+
+.sub-header{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #16A085;
+}
+
+.title-header{
+    font-size: 38px;
+    font-weight: 600;
+    color: #16A085;
+    width: 80%;
+    line-height: 46px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #16A085;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-header{
+    margin-top: 40px;
+    color: #16A085;
+    border-radius: 50px;
+    border: 2px solid #16A085;
+    padding: 14px 50px;
+}
+
+.btn-header:hover{
+    background-color: #16A085;
+    color: white;
+}
+
