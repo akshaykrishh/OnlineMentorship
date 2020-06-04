@@ -182,6 +182,7 @@ img{
 
 .container h1{
     margin-bottom: 10px;
+    color: #16A085;
 }
 
 .container p{
@@ -303,6 +304,15 @@ tr td i {
     color: white;
 }
 
+.alert{
+    text-align: center;
+    padding: 10px;
+    background-color: #16A085;
+    color: white;
+    margin-bottom: 30px;
+    display: none;
+}
+
 @media only screen and (max-width: 1270px){
     .header{
         margin-top: 3%;
@@ -414,6 +424,10 @@ tr td i {
 }
 
 @media only screen and (max-width: 576px){
+    section{
+        height: 100vh;
+    }
+
     .btn{
         font-size: 1rem;
     }
@@ -459,10 +473,16 @@ tr td i {
    }
 }
 
-/* Landscape */
-@media only screen and (max-width: 1366px) and (orientation: landscape){
+@media only screen and (max-width: 1024px) and (orientation: landscape){
     section{
-        height: 70vh;
+        height: 100vh;
+    }
+}
+
+/* Landscape */
+/* @media only screen and (max-width: 1366px) and (orientation: landscape){
+    section{
+        height: 100vh;
     }
 }
 
@@ -495,6 +515,6 @@ tr td i {
     section{
         height: 200vh;
     }
-}
+} */
 
 

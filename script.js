@@ -47,6 +47,7 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
 firebase.analytics();
 
 // Reference messages collection
@@ -74,7 +75,13 @@ function submitForm(e) {
     //Save Message
     saveMessage(Fname, Lname, email, phone, ans, Cname, address, checkbox)
 
+    //Show Alert
+    document.querySelector('.alert').style.display = "block";
 
+    //Hide alert after 3 sec
+    setTimeout(function () {
+        document.querySelector('.alert').style.display = "none";
+    }, 3000);
 }
 
 //Function to get form values
