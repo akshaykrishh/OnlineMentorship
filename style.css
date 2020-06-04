@@ -67,8 +67,8 @@ img{
     color: #16A085;
     width: 80%;
     line-height: 46px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .text{
@@ -87,7 +87,7 @@ img{
 }
 
 .btn-header{
-    margin-top: 40px;
+    margin-top: 30px;
     color: #16A085;
     border-radius: 50px;
     border: 2px solid #16A085;
