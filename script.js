@@ -7,6 +7,12 @@ $('#ans').on('change', function () {
     }
 });
 
+$('a[href*="#section"]').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 100
+    }, 2000);
+});
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
