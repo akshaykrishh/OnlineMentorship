@@ -1,10 +1,10 @@
 //Show Coaching Name
-$('#ans').on('change', function () {
+$('.ans').on('change', function () {
     if ($(this).val() === "yes") {
         $("#ifYes").show();
     }
     else {
-        $("#ifYes").hide()
+        $("#ifYes").hide();
     }
 });
 
@@ -14,6 +14,19 @@ $('a[href*="#section"]').on('click', function () {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top - 100
     }, 2000);
+});
+
+//Form Registration
+$('#registerForm').on('submit', function (e) {
+
+    //Show Alert
+    document.querySelector('.alert').style.display = "block";
+
+    //Hide alert after 4 sec
+    setTimeout(function () {
+        document.querySelector('.alert').style.display = "none";
+    }, 4000);
+
 });
 
 // Get the modal
@@ -79,7 +92,6 @@ function submitForm(e) {
     var ans = getInputVal('ans');
     var Cname = getInputVal('Cname');
     var address = getInputVal('address');
-    var checkbox = getInputVal('checkbox');
 
     //Save Message
     saveMessage(Fname, Lname, email, phone, ans, Cname, address, checkbox)
@@ -110,7 +122,5 @@ function saveMessage(Fname, Lname, email, phone, ans, Cname, address) {
         ans: ans,
         Cname: Cname,
         address: address,
-        checkbox: checkbox
-
     });
 }

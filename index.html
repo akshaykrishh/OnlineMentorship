@@ -43,32 +43,38 @@
                 <div class="contact-left">
                     <h3>Registration</h3>
                     <div class="alert">Registartion Successfull</div>
-                    <form action="" id="registerForm">
+                    <!-- https://docs.google.com/forms/d/e/1FAIpQLScVN2wwyCuliupXUANg2hEuvIl3D4YL6Bc_iwpkMfEUMJjCBg/viewform?usp=pp_url&entry.993117469=Akshay&entry.1202415337=Krishna&entry.566797949=akshaykrishnakanth@gmail.com&entry.2000852851=08089784868&entry.1830134624=Yes&entry.1747254544=IPF&entry.1976556550=327,+Ganga+Hostel%0AIIT+MADRAS -->
+                    <form
+                        action="https://docs.google.com/forms/d/e/1FAIpQLScVN2wwyCuliupXUANg2hEuvIl3D4YL6Bc_iwpkMfEUMJjCBg/formResponse?"
+                        name="registerForm" id="registerForm" enctype="text/plain" target="hidden_iframe"
+                        onsubmit="submitted=true;">
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="">First Name</label>
-                                <input type="text" name="Fname" id="Fname" placeholder="" required>
+                                <input type="text" name="entry.993117469" id="entry.993117469" placeholder="" required>
                             </div>
                             <div class="input-group">
                                 <label for="">Last Name</label>
-                                <input type="text" name="Lname" id="Lname" placeholder="" required>
+                                <input type="text" name="entry.1202415337" id="entry.1202415337" placeholder=""
+                                    required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="">Email</label>
-                                <input type="email" name="email" id="email" placeholder="" required>
+                                <input type="email" name="entry.566797949" id="entry.566797949" placeholder="" required>
                             </div>
                             <div class="input-group">
                                 <label for="">Phone Number</label>
-                                <input type="text" name="phone" id="phone" placeholder="" required>
+                                <input type="text" name="entry.2000852851" id="entry.2000852851" placeholder=""
+                                    required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group" id="coach">
                                 <label>Do you go for coaching?</label>
                                 <div class="custom_select">
-                                    <select name="ans" id="ans" required>
+                                    <select name="entry.1830134624" id="entry.1830134624" class="ans" required>
                                         <option value="">Select</option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
@@ -77,11 +83,12 @@
                             </div>
                             <div class="input-group" id="ifYes" style="display: none;">
                                 <label>Coaching Institute Name</label>
-                                <input type="text" name="Cname" id="Cname" class="input">
+                                <input type="text" name="entry.1747254544" id="entry.1747254544" class="input">
                             </div>
                         </div>
                         <label>Address</label>
-                        <textarea rows="5" name="address" id="address" placeholder="" required></textarea>
+                        <textarea rows="5" name="entry.1976556550" id="entry.1976556550" placeholder=""
+                            required></textarea>
                         <div class="inputfield terms">
                             <input type="checkbox" name="checkbox" id="checkbox" required>
                             <label for="checkbox">
@@ -90,6 +97,8 @@
                         </div>
                         <button type="submit">Register</button>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {}"></iframe>
                 </div>
 
                 <div class="contact-right">
