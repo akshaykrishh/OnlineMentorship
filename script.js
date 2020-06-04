@@ -1,3 +1,4 @@
+//Show Coaching Name
 $('#ans').on('change', function () {
     if ($(this).val() === "yes") {
         $("#ifYes").show();
@@ -7,6 +8,8 @@ $('#ans').on('change', function () {
     }
 });
 
+
+//Smooth Scroll
 $('a[href*="#section"]').on('click', function () {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top - 100
